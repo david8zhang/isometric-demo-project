@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bldyei3724bn1"]
+
+[ext_resource type="PackedScene" uid="uid://dxf428ye353y3" path="res://scenes/IsoTilemapLayer.tscn" id="1_qbsmt"]
+[ext_resource type="PackedScene" uid="uid://cfk2wdoosxw8m" path="res://prefabs/Player.tscn" id="2_qbsmt"]
+
+[node name="Game" type="Node2D" unique_id=1886985263]
+
+[node name="TileMapLayer" parent="." unique_id=1822960747 instance=ExtResource("1_qbsmt")]
+
+[node name="Player" parent="." unique_id=1191777307 instance=ExtResource("2_qbsmt")]
+position = Vector2(34, 0)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1724514454]
+zoom = Vector2(4, 4)
